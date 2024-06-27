@@ -18,12 +18,12 @@ function generateExcuse() {
     "near the toilet"
   ];
 
-  let randomWho = who[Math.floor(Math.random() * who.length)];
-  let randomAction = action[Math.floor(Math.random() * action.length)];
-  let randomWhat = what[Math.floor(Math.random() * what.length)];
-  let randomWhen = when[Math.floor(Math.random() * when.length)];
+  let Who = who[Math.floor(Math.random() * who.length)];
+  let Action = action[Math.floor(Math.random() * action.length)];
+  let What = what[Math.floor(Math.random() * what.length)];
+  let When = when[Math.floor(Math.random() * when.length)];
 
-  let excuse = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
+  let excuse = `${Who} ${Action} ${What} ${When}.`;
 
   document.getElementById("excuse").textContent = excuse;
 }
